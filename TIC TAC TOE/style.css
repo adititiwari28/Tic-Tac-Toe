@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+body{
+    
+    font-family: cursive;
+    background-color: #ffb3c1;
+    max-height: 660px;
+}
+.card{
+    width: 400px;
+    height: 550px;
+    max-height: 650px;
+    border: none;
+    text-align: center;
+    margin: 70px auto 0;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    background-color: #ff758f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+h1{
+    order: 0;
+    color: aliceblue;
+}
+.game{
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -47%);
+    row-gap: 25px;
+    column-gap: 25px;
+    flex-grow:  1;
+}
+.box{
+    height: 90px;
+    width: 90px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background: #fcd0d8;
+    border-radius: 10px;
+    color: #590d22;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.para{
+    position: absolute;
+    top: 77%;
+    left: 32%;
+    order: 2;
+    font-size: large;
+   margin-top: auto;
+   margin-bottom: 25px;
+    text-align: center;
+    color: #fff0f3;
+    font-size: x-large;
+    z-index: 1;
+}
+.hide{
+    display: none;
+}
+.set{
+
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+   margin-top: auto;
+    margin-bottom: 25px;
+}
+#reset{
+    width: 120px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background: #800f2f;
+    color: azure;
+    font-size: 15px;
+}
+#new{
+    width: 120px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background: #800f2f;
+    color: azure;
+    font-size: 15px; 
+}
+
+
+
+/* FOR DEKSTOP */
+@media screen  and (min-width: 1024px){
+    .card{
+        background-color : #ff758f;
+    }
+}
+  /* for tablet */
+@media screen  and (min-width: 768px)and (max-width:1024px){
+    .card{
+    
+
+    }
+}
+
+
+
+
+ /* for mobile */
+@media screen and (max-width:640px){
+    .card{
+        max-width:100%;
+        max-height: 80%;
+        position: relative;
+
+    }
+    .game{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -42%);
+    }
+
+    .box{
+        height: 75px;
+        width: 75px;
+        font-size:x-large ;
+        
+    }
+    #reset{
+            height: 50px;
+            width: 90px;
+            font-size: medium;
+            padding: 2px;
+    }
+    #new{
+        height: 50px;
+        width: 90px;
+        font-size: medium;
+        padding: 2px;
+    }
+    .para{
+        font-size: x-large;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        z-index: 1;
+        position: absolute;
+        top: 72%;
+        left: 40%;
+    }
+
+}
