@@ -9,14 +9,14 @@ Tic Tac Toe is a classic two-player game where players take turns marking a squa
 
 3rd : Open Tic-Tac-Toe folder in vscode
 
-## Features
+# Features
 - Simple and intuitive user interface
 - Two-player mode (local)
 - Reset button to restart the game
 - New Game button to start a new game
 - Responsive design for different screen sizes
 
-## Technologies Used
+# Technologies Used
 - HTML
 - CSS
 - JavaScript
